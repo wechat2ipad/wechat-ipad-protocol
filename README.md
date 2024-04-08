@@ -1,5 +1,7 @@
 # wechat-ipad-protocol
 
+微信iPad协议
+
 QQ: 408449830
 
 1000r一套，无任何后续费用
