@@ -1,0 +1,38 @@
+name: Add Space to Readme
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 * * * *' # This will schedule the job to run once every hour
+
+jobs:
+  add-space:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Add space to readme
+        run: echo " " >> README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "wechat2ipad"
+          git config --global user.email "juemzpu@gmail.com"
+          git add README.md
+          git commit -m "Add space to README" # Ensure the commit message is in quotes
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit."
+          else
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push changes
+        if: failure() # This step will only run if the previous step fails
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
