@@ -1,12 +1,12 @@
 name: Add Space to Readme
-
 on:
   push:
     branches:
       - main
   schedule:
     - cron: '0 * * * *' # This will schedule the job to run once every hour
-
+permissions:
+  contents: write
 jobs:
   add-space:
     runs-on: ubuntu-latest
