@@ -22,12 +22,8 @@ jobs:
           git config --global user.name "wechat2ipad"
           git config --global user.email "juemzpu@gmail.com"
           git add README.md
-          git commit -m "Add space to README" # Ensure the commit message is in quotes
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "No changes to commit."
-          else
-            git push
-          fi
+          git commit -m "Add space to README" || echo "No changes to commit."
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
