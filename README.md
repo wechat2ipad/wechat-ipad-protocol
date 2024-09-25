@@ -12,6 +12,15 @@
 
 ---
 
+
+Latest Wechat iPad Protocol Version 849
+QQ: 408449830 — Free interface address available
+
+💰 Price: 3000 CNY per package (deployment 800), no additional fees
+🆓 Rental: 10 CNY/day/account (for testing), 100 CNY/month/account, on-demand usage
+
+---
+
 ## 功能介绍 🚀
 
 ### 登录功能 🔑
