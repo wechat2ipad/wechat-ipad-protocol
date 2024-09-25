@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Add space to readme
-        run: echo " " >> README.md
+        run: echo " " >> README.md && echo " " >> long-tail-keywords
 
       - name: Commit changes
         run: |
