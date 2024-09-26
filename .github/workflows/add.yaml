@@ -22,6 +22,7 @@ jobs:
           git config --global user.name "wechat2ipad"
           git config --global user.email "juemzpu@gmail.com"
           git add README.md
+          git add long-tail-keywords
           git commit -m "Add space to README" || echo "No changes to commit."
           git push
         env:
