@@ -52,7 +52,7 @@
 26.8.1 增加群聊成员变动回调
 26.8.3 直登iPad, 修复心跳相关问题, 重新拉到861, 下个版本跟新算法吧, 头痛
 26.8.5 抽离直登和iPad登录,同步callback和ws消息格式
-26.8.6 消息回调格式封装一层key, 方便聚合聊天callback时分辨账号(贴心不兄弟们)
+26.8.6 消息回调格式封装一层key, 方便聚合聊天callback时分辨账号
 ```
 
 Latest Wechat iPad Protocol Version 859  
