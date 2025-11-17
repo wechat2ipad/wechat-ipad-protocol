@@ -4,7 +4,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 * * * *' # This will schedule the job to run once every hour
+    - cron: '0 9 * * *' # This will schedule the job to run once every hour
 permissions:
   contents: write
 jobs:
