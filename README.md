@@ -1,4 +1,4 @@
-[点击这里查看旧版 README (readme1.md)](./readme1.md)
+[点击这里查看旧版 README (readme1.md)](./README1.md)
 
 # Wechat-iPad-Protocol 📱
 
